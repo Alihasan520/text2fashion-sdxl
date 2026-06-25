@@ -1,0 +1,22 @@
+dataset:
+  name: "hahminlew/kream-product-blip-captions"
+  split: "train"
+  image_column: "image"
+  text_column: "text"
+
+categories:
+  target:
+    - "top"
+    - "bottom"
+    - "outer"
+
+processing:
+  seed: 42
+  test_size: 0.10
+  validation_size: 0.10
+  save_processed_splits: true
+
+paths:
+  processed_dataset_dir: "/kaggle/working/all_categories_splits"
+  train_export_dir: "/kaggle/working/all_categories_train"
+  validation_report_path: "/kaggle/working/data_validation_summary.json"

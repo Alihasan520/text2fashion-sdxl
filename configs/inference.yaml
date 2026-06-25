@@ -1,0 +1,10 @@
+model:
+  base_model: "stabilityai/stable-diffusion-xl-base-1.0"
+  lora_path: "outputs/exports/best_lora"
+
+inference:
+  num_inference_steps: 30
+  guidance_scale: 7.5
+  height: 768
+  width: 768
+  seed: 42

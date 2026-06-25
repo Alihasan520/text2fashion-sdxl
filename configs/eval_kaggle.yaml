@@ -1,0 +1,29 @@
+paths:
+  base_model: "stabilityai/stable-diffusion-xl-base-1.0"
+  lora_root: "/kaggle/working/text2fashion_sdxl_lora_all"
+  eval_output_dir: "/kaggle/working/eval_outputs"
+  score_template_path: "/kaggle/working/visual_evaluation_template.csv"
+
+inference:
+  seed: 42
+  num_inference_steps: 30
+  guidance_scale: 7.5
+  height: 768
+  width: 768
+
+checkpoints:
+  include_final: true
+  names: []
+
+evaluation:
+  prompts_per_category: 6
+  seeds:
+    - 42
+    - 123
+  metrics:
+    - prompt_alignment
+    - category_correctness
+    - color_correctness
+    - visual_quality
+    - artifact_control
+    - product_view_correctness

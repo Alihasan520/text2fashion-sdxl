@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text2fashion-sdxl"
+version = "0.1.0"
+description = "SDXL LoRA text-to-fashion image generation project."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Hussein Hasan" }
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

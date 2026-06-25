@@ -1,0 +1,8 @@
+torch
+diffusers==0.37.1
+transformers
+accelerate
+peft
+safetensors
+gradio
+huggingface_hub

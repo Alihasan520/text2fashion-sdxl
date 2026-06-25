@@ -1,0 +1,14 @@
+{
+  "selected_checkpoint": "",
+  "selection_date": "",
+  "reason": "",
+  "metrics": {
+    "prompt_alignment": null,
+    "category_correctness": null,
+    "color_correctness": null,
+    "visual_quality": null,
+    "artifact_control": null,
+    "product_view_correctness": null,
+    "final_score": null
+  }
+}

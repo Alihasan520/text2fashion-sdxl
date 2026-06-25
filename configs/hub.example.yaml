@@ -1,0 +1,26 @@
+# Copy this file to configs/hub.yaml and edit it locally.
+# configs/hub.yaml is ignored by Git.
+
+huggingface:
+  username: "your-hf-username"
+  model_repo_name: "text2fashion-sdxl-lora"
+  space_repo_name: "text2fashion-sdxl-demo"
+  model_visibility: "public"
+  space_visibility: "public"
+
+model:
+  local_lora_path: "outputs/exports/best_lora"
+  base_model: "stabilityai/stable-diffusion-xl-base-1.0"
+
+space:
+  app_dir: "app"
+  sdk: "gradio"
+
+model_card:
+  project_name: "Text2Fashion-SDXL"
+  dataset_name: "hahminlew/kream-product-blip-captions"
+  fine_tuning_method: "LoRA"
+  trained_categories:
+    - "top"
+    - "bottom"
+    - "outer"

@@ -1,0 +1,23 @@
+paths:
+  lora_root: "outputs/checkpoints"
+  eval_output_dir: "outputs/eval"
+
+inference:
+  seed: 42
+  num_inference_steps: 30
+  guidance_scale: 7.5
+  height: 768
+  width: 768
+
+evaluation:
+  categories:
+    - "top"
+    - "bottom"
+    - "outer"
+  metrics:
+    - "prompt_alignment"
+    - "category_correctness"
+    - "color_correctness"
+    - "visual_quality"
+    - "artifact_control"
+    - "product_view_correctness"

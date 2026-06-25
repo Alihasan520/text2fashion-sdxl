@@ -1,0 +1,21 @@
+model:
+  base_model: "stabilityai/stable-diffusion-xl-base-1.0"
+
+paths:
+  train_data_dir: "/kaggle/working/all_categories_train"
+  output_dir: "/kaggle/working/text2fashion_sdxl_lora_all"
+
+training:
+  resolution: 512
+  train_batch_size: 1
+  gradient_accumulation_steps: 4
+  learning_rate: 5.0e-5
+  lr_scheduler: "constant"
+  lr_warmup_steps: 0
+  max_train_steps: 1500
+  checkpointing_steps: 250
+  checkpoints_total_limit: 4
+  mixed_precision: "fp16"
+  gradient_checkpointing: true
+  random_flip: true
+  seed: 42
